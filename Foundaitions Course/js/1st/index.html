@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function add7(num1){
+            return num1+7;
+        }
+        let arrAdd7 = (num1) => num1+7;
+        
+        console.log(add7(5));
+        console.log("Arrow function: "+arrAdd7(5))
+
+        function multiply(num1,num2){
+            return num1*num2;
+        }
+        let arrMultiply = (num1,num2) => num1*num2;
+
+        console.log(multiply(4,4));
+        console.log("Arrow function: "+arrMultiply(4,4));
+
+        function capitalized(text){
+            let firstLetterCapatalized = text.substring(0,1).toUpperCase();
+            text = text.slice(1);
+            return firstLetterCapatalized +""+text.toLowerCase();
+        }
+        console.log(capitalized("HalLo Wie GeHt Es diER"));
+
+        function lastLetter(text){
+            return text.slice(-1);
+        }
+        let arrLastLetter = (text) => text.slice(-1);
+
+        console.log(lastLetter("Moin"));
+        console.log(arrLastLetter("Moin"));
+
+        //Fizz Buzz
+        let number = parseInt(prompt("Please enter your desired number"))
+
+        let isDivisableByThree = (num) => Boolean(!(num%3));
+        let isDivisableByFive= (num) => Boolean(!(num%5));
+
+        function fizzBuzz(num){
+            for(let i = 1; i <= num ; i++){
+                if(isDivisableByThree(i) && isDivisableByFive(i)){
+                    console.log("FizzBuzz");
+                }else if(isDivisableByThree(i)){
+                    console.log("Fizz");
+                }else if(isDivisableByFive(i)){
+                    console.log("Buzz");
+                }else{
+                    console.log(i);
+                }
+            }
+        }
+        
+        fizzBuzz(number);        
+    </script>
+</body>
+</html>
