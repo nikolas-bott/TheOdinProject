@@ -1,0 +1,22 @@
+:root{
+    background-color: red;
+    padding: 0;
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    text-align: center;
+}
+::selection{
+    color: red;
+    background-color: aqua;
+}
+.emoji::before{
+    content: '🤓 🥸 😎';
+}

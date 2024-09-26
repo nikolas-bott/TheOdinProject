@@ -1,0 +1,3 @@
+Didnt think it was necessary to finish this excersise, 
+because in the near future I dont see any valid use Case for tables.
+And if so, I`d just search the stuff that I need.
