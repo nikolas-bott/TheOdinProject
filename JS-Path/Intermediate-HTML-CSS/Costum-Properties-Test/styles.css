@@ -1,5 +1,7 @@
-.container{
+:root{
     --background-color: rgb(10, 7, 53);
+}
+.container{
     background-color: var(--background-color);
     width: 500px;
     height: 500px;
